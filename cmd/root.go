@@ -149,6 +149,7 @@ func runCommand(command string) bool {
 
 	cmd.Stdout = os.Stdout
 	cmd.Stderr = os.Stderr
+  cmd.Stdin = os.Stdin
 
 	err := cmd.Start()
 
