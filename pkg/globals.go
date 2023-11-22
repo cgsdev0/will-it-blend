@@ -5,7 +5,7 @@ import (
 	"time"
 )
 
-var CLIENT_ID = "zi1hlaxywl566lk3r00gy6b61qknuf"
+var CLIENT_ID = "o1ffndtnzdf5xa6efbaytdti617btp"
 
 var httpClient = http.Client{
 	Timeout: time.Second * 10,
