@@ -5,7 +5,6 @@ import (
 	"math"
 	"os"
 	"os/exec"
-	"strings"
 	"sync"
 	"time"
 
@@ -146,9 +145,7 @@ func initConfig() {
 }
 
 func runCommand(command string) bool {
-	parts := strings.Split(command, " ")
-
-	cmd := exec.Command(parts[0], parts[1:]...)
+	cmd := exec.Command("bash", "-c", command)
 
 	cmd.Stdout = os.Stdout
 	cmd.Stderr = os.Stderr
